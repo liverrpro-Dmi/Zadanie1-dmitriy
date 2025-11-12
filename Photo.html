@@ -8,12 +8,23 @@
 <body>
      <ul>Навигационное меню:
 <li><a href="index.html">Главная страница</a></li>
-<li><a href="Photo.html">Файл №2 (картинки)</a></li>
-<li><a href="Pizza.html">Файл №3 (меню)</a></li>
+<li><a href="page2.html">Меню</a></li>
+<li><a href="page1.html">Контакты</a></li>
 </ul>
-    <h1>Файл №2</h1>
-    <img src="Photo1.jpg" height="200px">
-    <img src="Photo2.jpg" height="200px">
-    <img src="Photo3.jpg" height="200px">
+    <form action="#" method="post">
+        <label for="user_city" for="user_name">Введите имя:</label><br>
+        <input type="text" name="name" placeholder="Введите ваше имя" value="Безымянный" maxlength="25" required id="user_name"><br>
+        
+        <label for="user_city" for="user_surname">Введите фамилию:</label><br>
+        <input type="text" name="surname" placeholder="Введите вашу фамилию" id="user_surname"><br>
+
+        <label for="user_city">Выберите город проживания:</label><br>
+        <select name="city" id="user_city">
+            <option value="msk">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="tsk">Томск</option>
+        </select><br>
+        <textarea name="message" rows="3" cols="40" placeholder="Введите адрес проживания"></textarea><br>
+    <button>Сделать заказ!</button>  
 </body>
 </html>
